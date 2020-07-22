@@ -7,7 +7,6 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { BootstrapFormComponent } from './bootstrap-form/bootstrap-form.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { BootstrapTableComponent } from './bootstrap-table/bootstrap-table.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,8 +19,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule,
-    NgbModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

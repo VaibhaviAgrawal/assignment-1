@@ -2,11 +2,14 @@
 
     <div class="row">
   
-      <div class="col-sm-8 offset-sm-2">
+      <div class="col-12 col-sm-8 offset-sm-2">
   
         <div>
+          
           <form>     
             <div class="form-group">
+              <h2><span class="badge badge-secondary">Fill Basic Details</span></h2>
+              
               <label for="name">Name</label>
               <input [(ngModel)]="company.name" type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Name">
               <small id="nameHelp" class="form-text text-muted">Enter your Name</small>
@@ -19,7 +22,6 @@
               <textarea [(ngModel)]="company.address" type="text" name="address" class="form-control" id="address" aria-describedby="addressHelp"
                 placeholder="Enter your Company Address"></textarea>
               <small id="addressHelp" class="form-text text-muted">Enter your company’s address</small>
-  
               <label for="tel">Telephone</label>
               <input [(ngModel)]="company.tel" name="tel" class="form-control" id="tel" aria-describedby="telHelp">
     
@@ -32,24 +34,56 @@
               <input [(ngModel)]="company.name_manager" name="name_manager" class="form-control" id="name_manager" aria-describedby="name_managerHelp">
     
               <small id="name_managerHelp" class="form-text text-muted">Enter your manager's name from TIL</small>
-              <label for="tel">Date</label>
-              <input class="form-control" placeholder="yyyy-mm-dd"
+              
+              <label for="date">Date</label>
+              <input type="date" [(ngModel)]="company.date" name="date" class="form-control" id="date" aria-describedby="dateHelp">
 
-              name="dp" [(ngModel)]="company.date" ngbDatepicker #d="ngbDatepicker">
- 
-       <div class="input-group-append">
- 
-         <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
- 
-       </div>
-    
-              <small id="telHelp" class="form-text text-muted">Enter your employee’s telephone number</small>
-  
             </div>
+
+
+            <div class="form-group">
+              <!---------------------------------------------------------------------->
+              <div class="row row-content">
+                <div class="col-12">
+                    <h2>Fill the Organizational Health Check Up Form</h2>
+                    
+    
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="form1head">
+                              <h3 class="mb-0">
+                                  <a data-toggle="collapse" data-target="#form1">
+                                  Leadership Stock Training
+                                  </a>
+                              </h3>
+                            </div>
+                            <div class="collapse show" id="form1" data-parent="#accordion">
+                                <div class="card-body">
+                                  <label for="date">Date</label>
+                                  <input type="date" [(ngModel)]="company.date" name="date" class="form-control" id="date" aria-describedby="dateHelp">
+                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                    
+                        
+                        
+        
+                    </div>
+    
+                  </div>
+              </div>
+              
+              <!----------------------------------------------------------------------------------->
+            </div>
+
           </form>
           <button class="btn btn-primary" (click)="createCompany()">Submit</button>
         
         </div>
+       
       </div>
     </div>
   </div>
