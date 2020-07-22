@@ -7,31 +7,19 @@ import { FormGroup, FormControl, FormArray , Validators, FormBuilder} from '@ang
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  
+  
 
-  loginForm: FormGroup;
-
-  constructor(private fb: FormBuilder) {
+  constructor() {
 
   }
 
   ngOnInit() {
 
-      this.loginForm = this.fb.group({
-
-          email: [null, [Validators.required, Validators.minLength(4)]],
-
-          password: [null, [Validators.required, Validators.maxLength(8)]]
-
-      })
+     
 
   }
 
-  loginUser() {
-
-      console.log(this.loginForm.status);
-
-      console.log(this.loginForm.value);
-
-  }
+ 
 
 }

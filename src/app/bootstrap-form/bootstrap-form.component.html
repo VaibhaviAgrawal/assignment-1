@@ -1,0 +1,56 @@
+<div class="container" style="margin-top: 70px;">
+
+    <div class="row">
+  
+      <div class="col-sm-8 offset-sm-2">
+  
+        <div>
+          <form>     
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input [(ngModel)]="company.name" type="text" name="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Name">
+              <small id="nameHelp" class="form-text text-muted">Enter your Name</small>
+
+              <label for="company_name">Company Name</label>
+              <input [(ngModel)]="company.company_name" type="text" name="company_name" class="form-control" id="company_name" aria-describedby="company_nameHelp" placeholder="Enter your Company name">
+              <small id="company_nameHelp" class="form-text text-muted">Enter your company’s name</small>
+  
+              <label for="address">Company Address</label>
+              <textarea [(ngModel)]="company.address" type="text" name="address" class="form-control" id="address" aria-describedby="addressHelp"
+                placeholder="Enter your Company Address"></textarea>
+              <small id="addressHelp" class="form-text text-muted">Enter your company’s address</small>
+  
+              <label for="tel">Telephone</label>
+              <input [(ngModel)]="company.tel" name="tel" class="form-control" id="tel" aria-describedby="telHelp">
+    
+              <small id="telHelp" class="form-text text-muted">Enter your employee’s telephone number</small>
+              <label for="total_employee">Total Employee strength</label>
+              <input [(ngModel)]="company.total_employee" name="total_employee" class="form-control" id="total_employee" aria-describedby="total_employeeHelp">
+    
+              <small id="total_employeeHelp" class="form-text text-muted">Enter your total employee number</small>
+              <label for="name_manager">Name of Manager from TIL</label>
+              <input [(ngModel)]="company.name_manager" name="name_manager" class="form-control" id="name_manager" aria-describedby="name_managerHelp">
+    
+              <small id="name_managerHelp" class="form-text text-muted">Enter your manager's name from TIL</small>
+              <label for="tel">Date</label>
+              <input class="form-control" placeholder="yyyy-mm-dd"
+
+              name="dp" [(ngModel)]="company.date" ngbDatepicker #d="ngbDatepicker">
+ 
+       <div class="input-group-append">
+ 
+         <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"></button>
+ 
+       </div>
+    
+              <small id="telHelp" class="form-text text-muted">Enter your employee’s telephone number</small>
+  
+            </div>
+          </form>
+          <button class="btn btn-primary" (click)="createCompany()">Submit</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
