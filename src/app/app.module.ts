@@ -7,13 +7,15 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { BootstrapFormComponent } from './bootstrap-form/bootstrap-form.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
 import { BootstrapTableComponent } from './bootstrap-table/bootstrap-table.component';
+import { ScoreDetailComponent } from './score-detail/score-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BootstrapFormComponent,
     JumbotronComponent,
-    BootstrapTableComponent
+    BootstrapTableComponent,
+    ScoreDetailComponent
   ],
   imports: [
     BrowserModule,

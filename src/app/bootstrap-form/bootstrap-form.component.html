@@ -3,10 +3,7 @@
     <div class="row">
   
       <div class="col-12 col-sm-8 offset-sm-2">
-  
-        <div>
-          
-          <form>     
+        <form>     
             <div class="form-group">
               <h2><span class="badge badge-secondary">Fill Basic Details</span></h2>
               
@@ -40,49 +37,295 @@
 
             </div>
 
-
+          <div class="row row-content">
             <div class="form-group">
+              
               <!---------------------------------------------------------------------->
-              <div class="row row-content">
+              
                 <div class="col-12">
-                    <h2>Fill the Organizational Health Check Up Form</h2>
                     
+                    <h2><span class="badge badge-secondary">Fill the Organizational Health Check Up Form</span></h2>
+              
     
                     <div id="accordion">
+                    <!------------------------------------------------>
                         <div class="card">
                             <div class="card-header" role="tab" id="form1head">
                               <h3 class="mb-0">
                                   <a data-toggle="collapse" data-target="#form1">
-                                  Leadership Stock Training
+                                  Leadership Stock Taking
                                   </a>
                               </h3>
                             </div>
                             <div class="collapse show" id="form1" data-parent="#accordion">
                                 <div class="card-body">
-                                  <label for="date">Date</label>
-                                  <input type="date" [(ngModel)]="company.date" name="date" class="form-control" id="date" aria-describedby="dateHelp">
-                    
+                                  <div class="col-md-10 form-group row">
+                                    <label for="one" class=" col-form-label"> What are the various departments in your organization? </label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="one" name="one" placeholder="Write here">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 form-group row">
+                                  <label for="two" class=" col-form-label"> How often your department heads come to you for making a critical decisions ? </label>
+                                  <div class="col-md-10">
+                                      <input type="text" class="form-control" id="two" name="two" placeholder="Write here">
+                                  </div>
+                              </div>
+                              <div class="col-md-10 form-group row">
+                                <label for="three" class=" col-form-label"> At what rate is your organization growing in last 5 years ? And is this growth as per plan or you wish you could have achieved more ? </label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="three" name="three" placeholder="Write here">
+                                </div>
+                            </div>
+                            <div class="col-md-10 form-group row">
+                              <label for="four" class="col-form-label"> In your trade, are the prices governed by market or by a Strategy ? </label>
+                              <div class="col-md-10">
+                                  <input type="text" class="form-control" id="four" name="four" placeholder="Write here">
+                              </div>
+                          </div>
+                          <div class="col-md-10 form-group row">
+                            <label for="five" class="col-form-label"> Share with us 3 innovations you and your team have introduced in your business in last 5 years. </label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="five" name="five" placeholder="Write here">
+                            </div>
+                        </div>
+                        <div class="col-md-10 form-group row">
+                          <label for="six" class="col-form-label"> What % of your annual turnover is contributed by newly acquired customers ?</label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control" id="six" name="six" placeholder="Write here">
+                          </div>
+                      </div>
+                      <div class="col-md-10 form-group row">
+                        <label for="seven" class=" col-form-label"> What would happen to your business if you are forced to reduce prices by 40% ? </label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="seven" name="seven" placeholder="Write here">
+                        </div>
+                    </div>
+                    <div class="col-md-10 form-group row">
+                      <label for="eight" class="col-form-label"> What are certain plans that are in pipeline and can be implemented anytime ? </label>
+                      <div class="col-md-10">
+                          <input type="text" class="form-control" id="eight" name="oneeight" placeholder="Write here">
+                      </div>
+                  </div>
                                 </div>
                             </div>
                         </div>
-                        
-                    
-                    
-                        
-                        
-        
+                        <!------------------------------------------------>
+                        <div class="card">
+                          <div class="card-header" role="tab" id="form2head">
+                            <h3 class="mb-0">
+                                <a class="collapsed" data-toggle="collapse" data-target="#form2">
+                                Team Health Check
+                                </a>
+                            </h3>
+                          </div>
+                          
+                                  <div class="collapse" id="form2" data-parent="#accordion">
+                                    <div class="card-body">
+                                    <div class="col-md-10 form-group row">
+                                      <label for="one" class=" col-form-label">On what all issues you are required to talk to your owner before taking a decision ? </label>
+                                      <div class="col-md-10">
+                                          <input type="text" class="form-control" id="one" name="one" placeholder="Write here">
+                                      </div>
+                                  </div>
+                                  <div class="col-md-10 form-group row">
+                                    <label for="two" class=" col-form-label">When was it that you took an interview of a junior who was suppose to join in your team ?  </label>
+                                    <div class="col-md-10">
+                                        <input type="text" class="form-control" id="two" name="two" placeholder="Write here">
+                                    </div>
+                                </div>
+                                <div class="col-md-10 form-group row">
+                                  <label for="three" class=" col-form-label"> Do you have a clearly defined goal sheet which if achieved you know the kind of increment you would get ? </label>
+                                  <div class="col-md-10">
+                                      <input type="text" class="form-control" id="three" name="three" placeholder="Write here">
+                                  </div>
+                              </div>
+                              <div class="col-md-10 form-group row">
+                                <label for="four" class="col-form-label"> Do you think at times you failed in delivering your result because of your colleague in other department ? If yes, briefly narrate the incidence. </label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="four" name="four" placeholder="Write here">
+                                </div>
+                            </div>
+                            <div class="col-md-10 form-group row">
+                              <label for="five" class="col-form-label"> How often you get feedback on your performance through your colleague ? </label>
+                              <div class="col-md-10">
+                                  <input type="text" class="form-control" id="five" name="five" placeholder="Write here">
+                              </div>
+                          </div>
+                          <div class="col-md-10 form-group row">
+                            <label for="six" class="col-form-label">Do you think it is possible to find true friends at the work place that one can confide with ? </label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="six" name="six" placeholder="Write here">
+                            </div>
+                        </div>
+                      </div>
+                          </div>
+                      </div>
+                      <!------------------------------------------------>
+                      <div class="card">
+                        <div class="card-header" role="tab" id="form3head">
+                          <h3 class="mb-0">
+                              <a class="collapsed" data-toggle="collapse" data-target="#form3">
+                              Culture Check
+                              </a>
+                          </h3>
+                        </div>
+                        <div class="collapse" id="form3" data-parent="#accordion">
+                            <div class="card-body">
+                              <div class="col-md-10 form-group row">
+                                <label for="one" class=" col-form-label"> What is the process you have to follow if you have to seek a leave ?</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="one" name="one" placeholder="Write here">
+                                </div>
+                            </div>
+                            <div class="col-md-10 form-group row">
+                              <label for="two" class=" col-form-label"> What is the frequency of a structured business review meeting in your organization ? </label>
+                              <div class="col-md-10">
+                                  <input type="text" class="form-control" id="two" name="two" placeholder="Write here">
+                              </div>
+                          </div>
+                          <div class="col-md-10 form-group row">
+                            <label for="three" class=" col-form-label">What is your opinion about meetings ? Do you think they yield anything ? </label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="three" name="three" placeholder="Write here">
+                            </div>
+                        </div>
+                        <div class="col-md-10 form-group row">
+                          <label for="four" class="col-form-label"> Do you think poor performers feel the heat in the company  </label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control" id="four" name="four" placeholder="Write here">
+                          </div>
+                      </div>
+                      <div class="col-md-10 form-group row">
+                        <label for="five" class="col-form-label"> If you are not getting the desired results, What do you do ? </label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="five" name="five" placeholder="Write here">
+                        </div>
                     </div>
-    
+                    <div class="col-md-10 form-group row">
+                      <label for="six" class="col-form-label">When was it that you were trained to do your job better </label>
+                      <div class="col-md-10">
+                          <input type="text" class="form-control" id="six" name="six" placeholder="Write here">
+                      </div>
+                  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------------------------------>
+                    <div class="card">
+                      <div class="card-header" role="tab" id="form4head">
+                        <h3 class="mb-0">
+                            <a class="collapsed" data-toggle="collapse" data-target="#form4">
+                            Energy Health Check
+                            </a>
+                        </h3>
+                      </div>
+                      <div class="collapse" id="form4" data-parent="#accordion">
+                          <div class="card-body">
+                            <div class="col-md-10 form-group row">
+                              <label for="one" class=" col-form-label">Why do you feel like coming to office everyday? Give 3 reasons </label>
+                              <div class="col-md-10">
+                                  <input type="text" class="form-control" id="one" name="one" placeholder="Write here">
+                              </div>
+                          </div>
+                          <div class="col-md-10 form-group row">
+                            <label for="two" class=" col-form-label"> Complete the sentence.. I like my office because... </label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="two" name="two" placeholder="Write here">
+                            </div>
+                        </div>
+                        <div class="col-md-10 form-group row">
+                          <label for="three" class=" col-form-label">These four occasions were really good in the year gone by... </label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control" id="three" name="three" placeholder="Write here">
+                          </div>
+                      </div>
+                      <div class="col-md-10 form-group row">
+                        <label for="four" class="col-form-label"> My family feels pride because I work in this company, Yes or No ?
+                        </label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="four" name="four" placeholder="Write here">
+                        </div>
+                    </div>
+                    <div class="col-md-10 form-group row">
+                      <label for="five" class="col-form-label"> We should have 5 days a week in our company. </label>
+                      <div class="col-md-10">
+                          <input type="text" class="form-control" id="five" name="five" placeholder="Write here">
+                      </div>
+                  </div>
+                  <div class="col-md-10 form-group row">
+                    <label for="six" class="col-form-label">If our company would have had this one thing more, we all would have loved it. </label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="six" name="six" placeholder="Write here">
+                    </div>
+                </div>
+                          </div>
+                      </div>
+                  </div>
+                  <!------------------------------------------------>
+                  <div class="card">
+                    <div class="card-header" role="tab" id="form5head">
+                      <h3 class="mb-0">
+                          <a class="collapsed" data-toggle="collapse" data-target="#form5">
+                          Growth Potential Check
+                          </a>
+                      </h3>
+                    </div>
+                    <div class="collapse" id="form5" data-parent="#accordion">
+                        <div class="card-body">
+                          <div class="col-md-10 form-group row">
+                            <label for="one" class=" col-form-label">Who is your nearest business competitor and how big or small is that company vis-a-vis yours ? </label>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" id="one" name="one" placeholder="Write here">
+                            </div>
+                        </div>
+                        <div class="col-md-10 form-group row">
+                          <label for="two" class=" col-form-label">  Do you think your team as a whole is firing on all cylinders, i.e. to the best of their ability or you see that there is a scope for doing better ?</label>
+                          <div class="col-md-10">
+                              <input type="text" class="form-control" id="two" name="two" placeholder="Write here">
+                          </div>
+                      </div>
+                      <div class="col-md-10 form-group row">
+                        <label for="three" class=" col-form-label">Are you able to get and retain the right talent ? </label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" id="three" name="three" placeholder="Write here">
+                        </div>
+                    </div>
+                    <div class="col-md-10 form-group row">
+                      <label for="four" class="col-form-label"> Define how your customers would describe your company as a brand ?  </label>
+                      <div class="col-md-10">
+                          <input type="text" class="form-control" id="four" name="four" placeholder="Write here">
+                      </div>
+                  </div>
+                  <div class="col-md-10 form-group row">
+                    <label for="five" class="col-form-label"> What part of the country still remains untapped as a market for you ?  </label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="five" name="five" placeholder="Write here">
+                    </div>
+                </div>
+                <div class="col-md-10 form-group row">
+                  <label for="six" class="col-form-label"> This is what stops you from going Global ? A... B... C..</label>
+                  <div class="col-md-10">
+                      <input type="text" class="form-control" id="six" name="six" placeholder="Write here">
                   </div>
               </div>
-              
+                        </div>
+                    </div>
+                </div>
+
+                <!------------------------------------------------>
+                    </div>
+                  </div>
               <!----------------------------------------------------------------------------------->
+                 
             </div>
+          </div>
 
           </form>
+
           <button class="btn btn-primary" (click)="createCompany()">Submit</button>
         
-        </div>
+        
        
       </div>
     </div>
